@@ -1,0 +1,210 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway|Bad Script");
+
+/*
+Body de la página
+-------------------------------------------------------------------------------------------------------
+*/
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Helvetica Neue;
+  font-weight: thin;
+}
+
+header, nav, ul, li, a, div{
+  /*border: 1px solid;*/
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+Contenedor Principal
+-------------------------------------------------------------------------------------------------------
+*/
+
+.main-wrapper{
+  width: 100%;
+  margin: 0px;
+}
+
+
+/*
+Cabecera (header)
+-------------------------------------------------------------------------------------------------------
+*/
+
+
+.header{
+  max-width: 1024px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*
+Menú de navegación (nav)
+------------------------------------------
+*/
+
+.header__menu{
+  display: inline-block;
+  width: 94.1%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+/*
+Lista del menú de navegación (ul)
+-------------------------------------------
+*/
+.menu__lista{
+  display: inline-block;
+}
+
+.menu__lista li{
+  display: inline-block;
+}
+
+.menu__lista li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: .9em .8em;
+  font-size: 1.1em;
+  color: #838585;
+}
+
+.a--margin{
+  margin-right: 2em;
+}
+
+.menu__lista li a:hover{
+  transform: scale(1.3);
+  transition-duration: .6s;
+  background: #555555;
+  border-radius: 30px; 
+  color: #D4D4D4;
+}
+
+
+/*
+Contenedor de sección de introducción
+-------------------------------------------------------------------------------------------------------
+*/
+
+.intro-container{
+  width: 100%;
+  background: url(../images/cube.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 6em;
+}
+
+.intro-container__content{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15% 0;
+}
+
+.intro-container__info{
+  width: 70%;
+  border: 8px double #FFF;
+  margin: 0 auto;
+  padding: 5%;
+  font-style: italic;
+  color: #969696;
+  text-align: center;
+  font-family: "Bad Script", Helvetica Neue;
+  font-weight: bolder;
+  font-size: 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:  -1px 2px 16px -1px #FFF;
+}
+
+
+/*
+Contenido de artículos
+-------------------------------------------------------------------------------------------------------
+*/
+
+
+/*.article-section{
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  position: relative;
+}*/
+
+.article-section{
+  max-width: 1024px;
+  height: auto;
+  margin:20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-section__item{
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  
+  box-shadow: -1px 3px 7px #b2b2b2
+}
+
+
+.efecto{
+  width: 100%;
+  height: 0px;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5em;
+  transition: all .3s ease;
+}
+
+.article-section__item:hover .efecto{
+  height: 100%;
+}
+
+.article-section__web{
+  width: 100%;
+  padding: 8% 0;
+}
+
+.color1{
+  background: #e34f26;
+}
+
+.color2{
+  background: #1572b6;
+}
+
+.color3{
+  background: #f7df1e;
+}
+
+.article-section__description{
+  padding: 5%;
+}
+
+.article-section__title{
+  font-weight: bolder;
+}
+
+
+
