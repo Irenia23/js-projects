@@ -102,7 +102,7 @@ Contenedor de sección de introducción
 
 .intro-container{
   width: 100%;
-  background: url(../images/cube.jpg) no-repeat center center;
+  background: url(../images/fondo8.jpeg) no-repeat center center;
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 6em;
@@ -150,6 +150,7 @@ Contenido de artículos
   height: auto;
   margin:20px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -158,8 +159,9 @@ Contenido de artículos
   text-align: center;
   overflow: hidden;
   position: relative;
-  
-  box-shadow: -1px 3px 7px #b2b2b2
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  /*box-shadow: -1px 3px 7px #b2b2b2;*/
+  margin-bottom: 40px;
 }
 
 
@@ -183,11 +185,46 @@ Contenido de artículos
 
 .article-section__web{
   width: 100%;
-  padding: 8% 0;
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #F2F2F2;
 }
 
-.color1{
-  background: #e34f26;
+.background-drum {
+  background-image: url("../images/drum.png");
+}
+
+.background-clock {
+  background-image: url("../images/clock.png");
+}
+
+.background-variables {
+  background-image: url("../images/css-variables.png");
+}
+
+.background-array1 {
+  background-image: url("../images/array1.png");
+}
+
+.background-panel {
+  background-image: url("../images/panel.png");
+}
+
+.background-array2 {
+  background-image: url("../images/array2.png");
+}
+
+.background-canvas {
+  background-image: url("../images/canvas.png");
+}
+
+.background-tools {
+  background-image: url("../images/tools.png");
+}
+
+.background-shift {
+  background-image: url("../images/shift.png");
 }
 
 .color2{

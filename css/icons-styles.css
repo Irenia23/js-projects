@@ -56,6 +56,12 @@ Iconos Ítems
   width: 4rem;
   height: 4rem;
   color: #FFF;
+  border-radius: 50%;
+}
+
+.icon-plus:hover {
+  box-shadow:  -1px 2px 16px -1px #FFF;
+  transition-duration: .5s;
 }
 
 .icon-plus-1{
