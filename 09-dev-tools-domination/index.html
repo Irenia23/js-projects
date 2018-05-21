@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    var p = document.querySelector('p');
+
+    function makeGreen() {
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+
+
+    // Regular
+
+    // Interpolated
+
+    var name = 'Irenia';
+    console.log('Hello, my name is %s %s', ':', 'Irenia Villalba Cantillo');
+    console.log(`Hola ni nombre es ${name}`);
+
+    // Styled
+
+    console.log('%c Soy un texto con estilo', 'font-size: 50px; background: black; color: #FFF');
+
+    // warning!
+
+    console.warn('Oh Nooooo');
+
+    // Error :|
+
+    console.error('Error');
+
+    // Info
+
+    console.info('En algún año habrá otro eclipse :D');
+
+    // Testing
+
+    console.assert(p.classList.contains('ouch'), '"p" no contiene tal clase'); 
+
+    // clearing
+
+    // console.clear();
+
+    // Viewing DOM Elements
+
+    console.log(p);
+    console.dir(p);
+
+    // Grouping together
+
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`${dog.name} is ${dog.age}: ${dog.age * 7}`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    // counting
+
+    console.count('Irenia');
+    console.count('Villalba');
+    console.count('Irenia');
+    console.count('Irenia');
+    console.count('Villalba');
+    console.count('Villalba');
+    console.count('Villalba');
+    console.count('Villalba');
+
+    // timing
+
+    console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos')
+    .then(data => data.json())
+    .then(data => {
+      console.timeEnd('fetching data');
+      console.log(data);
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/*
+Configuración por defecto de todos los iconos
+----------------------------------------------------------------------------------------------------------
+*/
+
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
+/*
+Logo de la página
+------------------------------------------------------------------------------------------
+*/
+.logo{
+  width: 5em;
+  height: 5em;
+}
+
+.logo-div{
+  display: inline-block;
+  position: absolute;
+  top: 21%;
+}
+
+.logo:hover{
+  -webkit-transform: rotate(360deg);transform: rotate(360deg);
+  cursor: pointer;
+  transition-duration: .7s;
+}
+
+.short-menu{
+  width: 3em;
+  height: 3em;
+  right: 0;
+  bottom: 18%;
+  position: absolute;
+  color: #555555;
+  display: none;
+}
+
+
+/*
+Iconos Ítems
+-----------------------------------------------------------------------------------------
+*/
+
+.icon-plus{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 4rem;
+  height: 4rem;
+  color: #FFF;
+  border-radius: 50%;
+}
+
+.icon-plus:hover {
+  box-shadow:  -1px 2px 16px -1px #FFF;
+  transition-duration: .5s;
+}
+
+.icon-plus-1{
+  position: absolute;
+  bottom: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+/*
+Web
+-----------------------------------------------------------------------------------------
+*/
+
+.icon-html5{
+  
+}
+
+.icon-css3{
+  
+}
+
+/*
+Social Media
+-----------------------------------------------------------------------------------------
+*/
+
+.social-media{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.facebook{
+  color: #3b5998;
+}
+
+.twitter{
+  color: #1dcaff;
+}
+
+.google-plus{
+  color: #d34836;
+}
+
+.pinterest{
+  color: #C92228;
+}
+
+.social-media:hover{
+  transition-duration: .6s;
+  color: #555;
+  transform:translate(1.5em,0);
+  transition: all 1s ease-in-out;
+}

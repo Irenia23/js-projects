@@ -1,0 +1,38 @@
+
+@media (max-width: 400px){
+
+    .header{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; 
+      height: 80px;
+    }
+
+    .header__menu{
+      display: none;
+    }
+
+    .logo{
+      width: 4em;
+      height: 4em;
+    }
+
+    .logo-div{
+      display: inline-block;
+      position: absolute;
+      top: 11%;
+      left: 2.3%;
+    }
+
+    .short-menu{
+      display: inline-block;
+    }
+
+    .intro-container__content{
+      width: 100%;
+    }
+
+    .intro-container__info{
+      font-size: 1.5rem;
+    }
+}
